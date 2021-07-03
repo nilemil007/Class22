@@ -1,0 +1,190 @@
+
+*{
+  margin: 0;
+}
+body{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.back{
+  display: inline-block;
+  text-decoration: none;
+  background-color: crimson;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin: 10px;
+  box-shadow: 0 5px 0 #424141;
+}
+.back:hover{
+  background-color:#b71937;
+}
+.back:active{
+  box-shadow: 0 2px 0 #424141;
+  transform: translateY(3px);
+}
+
+
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: sienna;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 0px #424141;
+  margin-left: 40px;
+}
+.btn:active{
+  transform: translateY(2px);
+  box-shadow: 0px 2px 0px #424141;
+}
+.btn:hover{
+  background-color: #864121;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(11, 84px);
+  grid-template-rows:84px;
+  grid-gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social-icon{
+  background-image: url('sprite-icon.jpg');
+  cursor: pointer;
+}
+.social-icon:nth-child(1):hover{
+  background-position: 0px 168px;
+}
+.social-icon:nth-child(1):active{
+  background-position: 0px 336px;
+}
+
+.social-icon:nth-child(2){
+  background-position: -84px 0;
+}
+.social-icon:nth-child(2):hover{
+  background-position: -84px 168px;
+}
+.social-icon:nth-child(2):active{
+  background-position: -84px 336px;
+}
+
+.social-icon:nth-child(3){
+  background-position: -168px 0;
+}
+.social-icon:nth-child(3):hover{
+  background-position: -168px 168px;
+}
+.social-icon:nth-child(3):active{
+  background-position: -168px 336px;
+}
+
+.social-icon:nth-child(4){
+  background-position: -252px 0;
+}
+.social-icon:nth-child(4):hover{
+  background-position: -252px 168px;
+}
+.social-icon:nth-child(4):active{
+  background-position: -252px 336px;
+}
+
+.social-icon:nth-child(5){
+  background-position: -336px 0;
+}
+.social-icon:nth-child(5):hover{
+  background-position: -336px 168px;
+}
+.social-icon:nth-child(5):active{
+  background-position: -336px 336px;
+}
+
+.social-icon:nth-child(6){
+  background-position: -420px 0;
+}
+.social-icon:nth-child(6):hover{
+  background-position: -420px 168px;
+}
+.social-icon:nth-child(6):active{
+  background-position: -420px 336px;
+}
+
+.social-icon:nth-child(7){
+  background-position: -504px 0;
+}
+.social-icon:nth-child(7):hover{
+  background-position: -504px 168px;
+}
+.social-icon:nth-child(7):active{
+  background-position: -504px 336px;
+}
+
+.social-icon:nth-child(8){
+  background-position: -588px 0;
+}
+.social-icon:nth-child(8):hover{
+  background-position: -588px 168px;
+}
+.social-icon:nth-child(8):active{
+  background-position: -588px 336px;
+}
+
+.social-icon:nth-child(9){
+  background-position: -672px 0;
+}
+.social-icon:nth-child(9):hover{
+  background-position: -672px 168px;
+}
+.social-icon:nth-child(9):active{
+  background-position: -672px 336px;
+}
+
+.social-icon:nth-child(10){
+  background-position: -756px 0;
+}
+.social-icon:nth-child(10):hover{
+  background-position: -756px 168px;
+}
+.social-icon:nth-child(10):active{
+  background-position: -756px 336px;
+}
+
+.social-icon:nth-child(11){
+  background-position: -840px 0;
+}
+.social-icon:nth-child(11):hover{
+  background-position: -840px 168px;
+}
+.social-icon:nth-child(11):active{
+  background-position: -840px 336px;
+}
+
+.box{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: calc(1536px / 6);
+  height: 256px;
+  transform: translate(-50%, -50%);
+  background:url('https://www.codeandweb.com/blog/2016/05/10/how-to-create-a-sprite-sheet/spritestrip.png');
+  animation: boy-run 1s steps(6) infinite;
+}
+
+@keyframes boy-run{
+  from{
+    background-position: 0;
+  }
+  to{
+    background-position: 1536px;
+  }
+}
